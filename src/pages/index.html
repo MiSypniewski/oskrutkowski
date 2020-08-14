@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>OSK Rutkowski | Żary</title>
+    <meta
+      name="description"
+      content="Ośrodek Szkolenia Kierowców RUTKOWSKI ROMAN"
+    />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="OSK Rutkowski" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta
+      property="og:description"
+      content="Ośrodek Szkolenia Kierowców RUTKOWSKI ROMAN"
+    />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
@@ -16,138 +22,142 @@
       property="og:image"
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header>
+      <div>
+        <h1>Rutkowski</h1>
+        <h2>Ośrodek Szkolenia Kierowców</h2>
+      </div>
+      <div>
+        <p>Gotowy do rozpoczęcia nauki?</p>
+        <p>Jesteś w dobrych rękach. Dowiedz się wiecej i zadzwoń</p>
+        <a href="tel:608270474">Zadzwoń</a>
+      </div>
+    </header>
+    <main>
+      <section class="firm">
+        <div class="white">
+          <h1>Ucz się razem z OSK Rutkowski</h1>
+          <div class="line"></div>
+          <p>Ośrodek szkolenia kierowców Rutkowski Roman zaprasza na kursy prawa jazdy kategorii B.</p>
+          <p>Jesteśmy prężnie rozwijającym się ośrodkiem kształcenia kierowców. Zapewniamy idealne warunki szkolenia
+            wszystkim kursantom. Dysponujemy profesjonalnie przygotowanym samochodem, dobrze wyposażoną, komfortową salą
+            wykładową oraz własnym pełnowymiarowym placem manewrowym.</p>
+          <p>Dostosowujemy się do Twoich potrzeb - tylko u nas wykłady prowadzone w systemie codziennym i weekendowym.
+            Przyjdź i przekonaj się sam.</p>
+          <p>W związku z tym, że istnieje duże zainteresowanie kursami a grupy szkoleniowe w ośrodku są maksymalnie
+            6-osobowe, proszę o wcześniejszy <span>kontakt telefoniczny.</span></p>
+          <div class="curs">
+            <p>Najbliższe kursy kat B. <span>23.01.2018</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="img">
+        <div class="image">
+          <p>Twoje zadowolenie i powodzenie na egzaminie jest także naszym sukcesem.</p>
+        </div>
+      </section>
+      <section class="features">
+        <div class="gray">
+          <h1>Oferta</h1>
+          <div class="line"></div>
+          <div class="wrapper">
+            <div class="feature">
+              <h2>Kategoria B</h2>
+              <h3>1500 zł</h3>
+              <ul>
+                <li>30 godzin wykładów</li>
+                <li>30 godzin jazdy samochodem</li>
+                <li>Zestaw pytań testowych w formie pisemnej i multumedialnej</li>
+                <li>Egzamin wewnętrzny</li>
+                <li>Samochód Toyota Yaris</li>
+                <li>Materiały dydaktyczne</li>
+              </ul>
+              <p class="btn"><a href="tel:608270474">Zapisz się!</a></p>
+            </div>
+            <div class="feature">
+              <h2>Kurs uzupełniający z teorii</h2>
+              <h3>200 zł</h3>
+              <ul>
+                <li>10 godzin</li>
+                <li>Materiały dydaktyczne</li>
+              </ul>
+              <p class="btn"><a href="tel:608270474">Zapisz się!</a></p>
+            </div>
+            <div class="feature">
+              <h2>Kurs uzupełniający z jazdy praktycznej</h2>
+              <h3>250 zł</h3>
+              <ul>
+                <li>5 godzin</li>
+                <li>Samochód Toyota Yaris</li>
+              </ul>
+              <p class="btn"><a href="tel:608270474">Zapisz się!</a></p>
+            </div>
+            <div class="feature">
+              <h2>Kurs doszkalający</h2>
+              <h3>50 zł</h3>
+              <ul>
+                <li>1 godzina</li>
+                <li>Samochód Toyota Yaris</li>
+              </ul>
+              <p class="btn"><a href="tel:608270474">Zapisz się!</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="white">
+          <h1>Kontakt</h1>
+          <div class="line"></div>
+          <div class="wrapper">
+            <div class="feature">
+              <h2>Ośrodek Szkolenia Kierowców Rutkowski Roman</h2>
+              <p>Biedrzychowice Dolne 88</p>
+              <p>68-200 Żary</p>
+              <p>kom.: 608 270 474</p>
+              <p>e-mail: oskrutkowski@interia.pl</p>
+            </div>
+            <div class="feature">
+              <h2>Sala wykładowa</h2>
+              <p>ul. Stanisława Moniuszki 28</p>
+              <p>68-200 Żary</p>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.011865163316!2d15.127885307248441!3d51.64065590568601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47089f2d00c68e19%3A0xca708ff8309b0682!2sStanis%C5%82awa+Moniuszki+28%2C+68-200+%C5%BBary!5e0!3m2!1spl!2spl!4v1546811119225"
+                  width="280" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="feature">
+              <h2>Palc manewrowy</h2>
+              <p>ul. Podwale 16</p>
+              <p>68-200 Żary</p>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027.4725806991687!2d15.145786084583152!3d51.6373273785452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47089f4a97990c9f%3A0x894d2242f9d9932c!2sPodwale+16%2C+68-200+%C5%BBary!5e0!3m2!1spl!2spl!4v1546811035114"
+                  width="280" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment">
+        <div class="gray">
+          <h1>Płatność</h1>
+          <div class="line"></div>
+          <div class="wrap">
+            <h2>Dane do przelewu:</h2>
+            <p>PKOBP Oddział 1 w Żarach</br>
+              53 1020 5460 0000 5102 0027 5669</br>
+              OSK Rutkowski Roman</br>
+              ul. Biedrzychowice Dolne 88</br>
+              68-200 Żary</br>
+              Tytuł: Osk Rutkowski Roman - twoje imię i nazwisko.</p>
+            <div class="line center"></div>
+            <p>Dla osób wpłacających jednorazowo pełną kwotę za kurs przewidziane są dodatkowe <span class="red"> 2h
+                gratis!</span></p>
+            <p>Możliwa jest płatność w ratach, wedle szczegółów uzgadnianych osobiście.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

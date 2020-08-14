@@ -1,65 +1,317 @@
-@keyframes circles {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.line {
+  width: 100px;
+  margin-left: 10px;
+  border-bottom: 2px solid #28a9aa;
+  border-radius: 5px;
+}
+
+.center {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #28a9aa;
+}
+
+.red {
+  color: red;
+  font-size: 1.2em;
+}
+
+header {
+  height: 100vh;
+  background-image: url("img/osk_rutkowski1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header div {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+header h1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+header h2 {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+header div:nth-of-type(2) {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+header p {
+  text-shadow: 2px 2px 2px black;
+}
+
+header a {
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #28a9aa;
+  border-radius: 15px;
+  transition: 0.3s linear all;
+}
+
+header a:hover {
+  background-color: #1e7f7f;
+}
+
+span {
+  font-weight: bold;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  line-height: 150%;
+}
+
+section.img {
+  height: 60vh;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section .image {
+  position: fixed;
+  background-image: url("img/osk_rutkowski2.jpg");
+  height: 100vh;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  z-index: -2;
+}
+
+div.firm {
+  color: white;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.curs {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  width: 85%;
+  border: 3px solid #28a9aa;
+  border-radius: 5px;
+}
+
+section .image p {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+section .image img {
+  height: 100%;
+  width: 100%;
+}
+
+section h1 {
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+section p {
+  padding: 10px 20px;
+}
+
+section.features {
+  background-color: #f0f2f5;
+  padding: 10px;
+}
+
+.white {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.gray {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f2f5;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section .feature {
+  flex-grow: 0;
+  max-width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+section .wrap {
+  text-align: center;
+}
+
+section .feature h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+section .feature h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+section .feature ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+section .feature ul li {
+  margin-top: 10px;
+}
+
+section .feature .btn {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+section img {
+  height: 150px;
+  width: 180px;
+}
+
+section .feature a {
+  margin: 40px 30px 0;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #28a9aa;
+  border-radius: 10px;
+  transition: 0.3s linear all;
+}
+section .feature a:hover {
+  background-color: #1e7f7f;
+}
+
+.payment {
+  background-color: #f0f2f5;
+}
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 3.3em;
   }
-  20% {
-    transform: translate(-50%, -50%) scale(1.5);
+
+  header h2 {
+    font-size: 1.8em;
   }
-  30% {
-    transform: translate(-50%, -50%) scale(0.8);
+
+  header p {
+    font-size: 1em;
   }
-  70% {
-    transform: translate(-50%, -50%) scale(1.9);
+
+  section h1 {
+    font-size: 2em;
+    line-height: 115%;
   }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
+
+  section h2 {
+    font-size: 1.5em;
+    line-height: 115%;
+  }
+
+  section h3 {
+    font-size: 1.3em;
+  }
+
+  section .image p {
+    font-size: 1.7em;
+    line-height: 150%;
+  }
+
+  .line {
+    width: 200px;
+  }
+
+  .center {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #28a9aa;
+  }
+
+  div.curs {
+    margin: 40px auto;
+    width: 25%;
   }
 }
 
-.hello {
-  position: relative;
-  z-index: 0;
-  &__logo {
-    position: relative;
-    z-index: 2020;
+@media (min-width: 1280px) {
+  header p {
+    font-size: 1.3em;
   }
-  &__circles {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    will-change: transform;
-    width: 220px;
-    height: 220px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    animation: circles 20s ease-in infinite;
-    &::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      will-change: transform;
-      width: 220px;
-      height: 220px;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      content: "";
-      display: block;
-      z-index: 1;
-      animation: circles 17s ease-out infinite;
-    }
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      will-change: transform;
-      width: 220px;
-      height: 220px;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      content: "";
-      display: block;
-      z-index: 1;
-      animation: circles 20s ease-in infinite;
-    }
+
+  header a {
+    font-size: 1.3em;
   }
 }
