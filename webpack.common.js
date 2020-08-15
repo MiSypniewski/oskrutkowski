@@ -3,6 +3,9 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   /* here you can define another js file */
+  entry: {
+    index: "./src/js/index.js",
+  },
   output: {
     filename: "[name].[hash:8].js",
     path: __dirname + "/dist",
