@@ -30,5 +30,7 @@
   }
   &__special {
     color: $red;
+    font-weight: bold;
+    white-space: nowrap;
   }
 }
