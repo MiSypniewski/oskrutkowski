@@ -1,5 +1,6 @@
 .about {
   padding: 48px 16px 48px;
+  background-color: $white;
   &__wrapper {
     max-width: 1024px;
   }
@@ -11,9 +12,6 @@
     margin-bottom: 32px;
     border-bottom: 3px solid $green;
     border-radius: 2px;
-  }
-  &__descryption {
-    // text-align: justify;
   }
   &__box {
     display: flex;

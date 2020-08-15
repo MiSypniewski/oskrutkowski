@@ -1,0 +1,38 @@
+.background {
+  height: 80vh;
+  display: block;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+
+  &__image {
+    position: fixed;
+    background-image: url("../assets/img//osk_rutkowski2.jpg");
+    height: 100vh;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    z-index: -2;
+  }
+  &__descryption {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: $white;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
