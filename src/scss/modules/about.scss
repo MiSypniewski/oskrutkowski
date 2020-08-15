@@ -13,6 +13,12 @@
     border-bottom: 3px solid $green;
     border-radius: 2px;
   }
+  &__descryption {
+    line-height: 150%;
+  }
+  &__special {
+    font-weight: bold;
+  }
   &__box {
     display: flex;
     width: 250px;
