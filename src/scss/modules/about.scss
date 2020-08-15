@@ -1,0 +1,36 @@
+.about {
+  padding: 48px 16px 48px;
+  &__wrapper {
+    max-width: 1024px;
+  }
+  &__titile--specjal {
+    white-space: nowrap;
+  }
+  &__line {
+    width: 150px;
+    margin-bottom: 32px;
+    border-bottom: 3px solid $green;
+    border-radius: 2px;
+  }
+  &__descryption {
+    // text-align: justify;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 32px auto;
+    padding: 8px;
+    border: 2px solid $green;
+    border-radius: 8px;
+  }
+  &__cours {
+    margin: 4px auto 16px;
+  }
+  &__cours--item {
+    font-weight: bold;
+    margin: 4px;
+  }
+}
