@@ -1,0 +1,40 @@
+.contacts {
+  padding: 48px 16px 48px;
+  background-color: $white;
+
+  &__wrapper {
+    max-width: $laptop;
+  }
+  &__line {
+    width: 150px;
+    margin-bottom: 32px;
+    border-bottom: 3px solid $green;
+    border-radius: 2px;
+  }
+  &__box {
+    //display: grid
+  }
+}
+
+.contact {
+  width: 300px;
+  margin: 8px auto 16px;
+  padding: 8px;
+  text-align: center;
+  @media (min-width: $mobileM) {
+    width: 330px;
+  }
+  @media (min-width: $mobileL) {
+    width: 350px;
+  }
+  &__map {
+    width: 280px;
+    margin: 0 auto;
+    @media (min-width: $mobileM) {
+      width: 300px;
+    }
+    @media (min-width: $mobileL) {
+      width: 330px;
+    }
+  }
+}
