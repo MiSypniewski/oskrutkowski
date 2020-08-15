@@ -1,0 +1,34 @@
+.payment {
+  padding: 48px 16px 48px;
+  background-color: $gray;
+  &__wrapper {
+    max-width: $laptop;
+  }
+  &__line {
+    width: 150px;
+    margin-bottom: 32px;
+    border-bottom: 3px solid $green;
+    border-radius: 2px;
+  }
+}
+
+.details {
+  margin: 8px auto 16px;
+  padding: 8px;
+  text-align: center;
+  &__descryption {
+    margin: 0;
+    padding: 4px;
+    line-height: 120%;
+  }
+  &__line {
+    width: 250px;
+    margin: 16px auto;
+    // margin-bottom: 32px;
+    border-bottom: 3px solid $green;
+    border-radius: 2px;
+  }
+  &__special {
+    color: $red;
+  }
+}
