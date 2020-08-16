@@ -1,8 +1,15 @@
 .about {
   padding: 48px 16px 48px;
   background-color: $white;
+  @media (min-width: $tablet) {
+    padding: 64px 32px 64px;
+  }
   &__wrapper {
     max-width: $laptop;
+    margin: 0 auto;
+    @media (min-width: $laptopL) {
+      max-width: $laptopL;
+    }
   }
   &__titile--special {
     white-space: nowrap;

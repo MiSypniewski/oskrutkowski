@@ -1,8 +1,15 @@
 .payment {
   padding: 48px 16px 48px;
   background-color: $gray;
+  @media (min-width: $tablet) {
+    padding: 64px 32px 64px;
+  }
   &__wrapper {
     max-width: $laptop;
+    margin: 0 auto;
+    @media (min-width: $laptopL) {
+      max-width: $laptopL;
+    }
   }
   &__line {
     width: 150px;

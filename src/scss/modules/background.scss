@@ -34,5 +34,12 @@
     font-weight: normal;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 150%;
+    }
+    @media (min-width: $laptop) {
+      font-size: 24px;
+    }
   }
 }

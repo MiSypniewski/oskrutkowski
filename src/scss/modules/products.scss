@@ -1,8 +1,15 @@
 .products {
   padding: 48px 16px 48px;
   background-color: $gray;
+  @media (min-width: $tablet) {
+    padding: 64px 32px 64px;
+  }
   &__wrapper {
     max-width: $laptop;
+    margin: 0 auto;
+    @media (min-width: $laptopL) {
+      max-width: $laptopL;
+    }
   }
   &__line {
     width: 150px;
@@ -12,7 +19,14 @@
   }
 
   &__box {
-    // display: grid;
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $laptopL) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 32px;
+    }
   }
 }
 
@@ -23,11 +37,22 @@
   border-radius: 16px;
   padding: 8px;
   text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   @media (min-width: $mobileM) {
     width: 300px;
   }
   @media (min-width: $mobileL) {
     width: 350px;
+  }
+  @media (min-width: $tablet) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $laptop) {
+    width: 320px;
   }
 
   &__title {
@@ -48,7 +73,7 @@
   }
   &__button {
     display: block;
-    max-width: 200px;
+    width: 200px;
     margin: 48px auto 16px;
     text-decoration: none;
     text-align: center;
@@ -56,7 +81,6 @@
     background-color: $green;
     padding: 8px 16px;
     border-radius: 8px;
-    // box-shadow: 0px 4px 8px #333;
     transition: 0.3s linear background-color;
     &:hover {
       background-color: $greenDark;
